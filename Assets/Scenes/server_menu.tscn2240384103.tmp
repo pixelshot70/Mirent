@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://4q8k2kqcwxyu"]
+
+[ext_resource type="Script" uid="uid://c8t4im8m43xdx" path="res://Assets/Scenes/server_menu.gd" id="1_181aa"]
+[ext_resource type="FontFile" uid="uid://c1bd73tui6qcb" path="res://Assets/Fonts/Fredoka.ttf" id="1_637al"]
+[ext_resource type="StyleBox" uid="uid://cnsvjwuqfmx4t" path="res://Assets/Styles/Normal.tres" id="2_181aa"]
+[ext_resource type="StyleBox" uid="uid://cmncenjwvyf22" path="res://Assets/Styles/Normal Pressed.tres" id="3_38jf0"]
+[ext_resource type="StyleBox" uid="uid://sq0ogbf52xss" path="res://Assets/Styles/Normal Hover.tres" id="4_1qmps"]
+
+[node name="ServerMenu" type="Control" unique_id=129465257]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_181aa")
+metadata/_edit_horizontal_guides_ = [-334.0, -533.0, -334.0]
+
+[node name="JoinIPServer" type="Button" parent="." unique_id=1015842063]
+layout_mode = 0
+offset_left = 566.0
+offset_top = 598.0
+offset_right = 899.0
+offset_bottom = 638.0
+theme_override_colors/font_outline_color = Color(0.4390491, 0.43904912, 0.43904912, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_637al")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("2_181aa")
+theme_override_styles/pressed = ExtResource("3_38jf0")
+theme_override_styles/hover = ExtResource("4_1qmps")
+text = "Join"
+
+[node name="CreateIPServer" type="Button" parent="." unique_id=1899819290]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 598.0
+offset_right = 550.0
+offset_bottom = 638.0
+theme_override_colors/font_outline_color = Color(0.4390491, 0.43904912, 0.43904912, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_637al")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("2_181aa")
+theme_override_styles/pressed = ExtResource("3_38jf0")
+theme_override_styles/hover = ExtResource("4_1qmps")
+text = "Create"
+
+[node name="CreatePublicServer" type="Button" parent="." unique_id=834652075]
+layout_mode = 0
+offset_left = 407.0
+offset_top = 66.0
+offset_right = 740.0
+offset_bottom = 106.0
+theme_override_colors/font_outline_color = Color(0.4390491, 0.43904912, 0.43904912, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_637al")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("2_181aa")
+theme_override_styles/pressed = ExtResource("3_38jf0")
+theme_override_styles/hover = ExtResource("4_1qmps")
+text = "Create Public Server"
+
+[node name="ServerList" type="Button" parent="." unique_id=1570708603]
+layout_mode = 0
+offset_left = 407.0
+offset_top = 8.0
+offset_right = 740.0
+offset_bottom = 48.0
+theme_override_colors/font_outline_color = Color(0.4390491, 0.43904912, 0.43904912, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_637al")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("2_181aa")
+theme_override_styles/pressed = ExtResource("3_38jf0")
+theme_override_styles/hover = ExtResource("4_1qmps")
+text = "Server List"
+
+[node name="IPaddress" type="LineEdit" parent="." unique_id=1063386930]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 539.0
+offset_right = 1141.0
+offset_bottom = 585.0
+theme_override_colors/font_outline_color = Color(0.3403393, 0.34033933, 0.3403393, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_637al")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("2_181aa")
+placeholder_text = "IP address"
+alignment = 1
+
+[node name="ServerName" type="LineEdit" parent="." unique_id=698705357]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 124.0
+offset_right = 831.0
+offset_bottom = 170.0
+theme_override_colors/font_outline_color = Color(0.3403393, 0.34033933, 0.3403393, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_637al")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("2_181aa")
+placeholder_text = "Server Name"
+alignment = 1
